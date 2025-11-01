@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Risqly</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="navbar__container">
+        <!-- Logo -->
+
+        <img class="navbar__logo" src="./assets/images/risqly-logo-dark.svg" width="108" alt="Logo" />
+
+        <!-- Desktop Menu -->
+        <nav class="navbar__menu">
+          <a href="#">Approach</a>
+          <a href="#">Impact</a>
+          <a href="#">Benefits</a>
+          <a href="#">Performance</a>
+          <a href="#">How it works</a>
+          <a href="#">Privacy</a>
+        </nav>
+
+        <!-- CTA -->
+        <a href="#" class="navbar__cta">Join the Waitlist</a>
+
+        <!-- Hamburger (Mobile) -->
+        <button class="navbar__toggle" aria-label="Menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Mobile Overlay Menu -->
+    <div class="menu-overlay" id="menuOverlay">
+      <div class="menu-overlay__content">
+        <div class="menu-overlay__header">
+          <img src="./assets/images/risqly-logo-dark.svg" alt="Logo" class="menu-overlay__logo" />
+          <button class="menu-overlay__close" aria-label="Close">
+            <img src="./assets/images/close-btn.svg" alt="close main menu icon" />
+          </button>
+        </div>
+
+        <nav class="menu-overlay__links">
+          <a href="#">Approach</a>
+          <a href="#">Impact</a>
+          <a href="#">Benefits</a>
+          <a href="#">Performance</a>
+          <a href="#">How it works</a>
+          <a href="#">Privacy</a>
+        </nav>
+
+        <a href="#" class="menu-overlay__cta">Join the Waitlist</a>
+      </div>
+    </div>
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div class="hero__background"></div>
+          <div class="hero__wrapper">
+            <div class="hero__content">
+              <!-- Early Adopter Label -->
+              <div class="hero__label">
+                <span>★</span>
+                Early adopters: Special pricing
+              </div>
+
+              <!-- Hero Text -->
+              <div class="hero__text">
+                <h1 class="hero__title h1">Quote review automation for brokers.</h1>
+                <p class="hero__description">
+                  Review hundreds of quotes in minutes using our simple tool use AI-driven platform. Assist your underwriting team and reduce the time it takes to bind policies.
+                </p>
+              </div>
+
+              <!-- Feature List -->
+              <ul class="hero__features">
+                <li class="hero__feature h10">Actionable reports</li>
+                <li class="hero__feature h10">No privacy risk</li>
+                <li class="hero__feature h10">No integration needed</li>
+                <li class="hero__feature h10">Easy to use</li>
+              </ul>
+            </div>
+
+            <!-- Hero Image -->
+            <div class="hero__image">
+              <picture>
+                <source media="(max-width: 1023px)" srcset="./assets/images/risqly_mockup-sm.png 1x, ./assets/images/risqly_mockup-sm-2x.png 2x" />
+                <source media="(min-width: 1024px)" srcset="./assets/images/risqly_mockup-lg.png 1x, ./assets/images/risqly_mockup-lg-2x.png 2x" />
+                <img src="./assets/images/risqly_mockup-sm.png" alt="Risqly platform interface" class="hero__app-image" />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="compare__section">
+        <div class="container">
+          <div class="compare__header">
+            <div class="badge">Smarter</div>
+            <h2 class="title">Pre-reviewed quotes. Faster decisions.</h2>
+            <p class="subtitle">Minimize manual rework of quotes.</p>
+          </div>
+
+          <div class="comparison">
+            <!-- Old Way -->
+            <div class="compare__card compare__card--old">
+              <h3>Old way</h3>
+              <ul>
+                <li>Quotes are piling up</li>
+                <li>Underwriter goes through them one by one</li>
+                <li>Back-and-forth with brokers for each quote</li>
+                <li>Quotes are submitted slowly</li>
+              </ul>
+            </div>
+
+            <!-- New Way -->
+            <div class="compare__card compare__card--new">
+              <h3>New way</h3>
+              <ul>
+                <li>Risqly™ reviews dozens of quotes in minutes</li>
+                <li>Underwriter focuses on complex issues</li>
+                <li>Risqly™ provides report with all flagged issues</li>
+                <li>Less back and forth; quotes are submitted faster</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="stats__section">
+        <div class="container">
+          <div class="stats__content">
+            <div class="stats__header">
+              <div class="badge">Reduce risk</div>
+              <h2 class="title">Increase underwriting performance.</h2>
+              <p class="subtitle">
+                Reduce churn significantly and see an increase in upsell opportunities. Our data-driven reports empower underwriting to make strategic decisions, leading to measurable success and
+                growth.
+              </p>
+            </div>
+            <div class="stats__data__wrapper">
+              <div class="stat__data">
+                <h3 class="stat__value">30<span>%</span></h3>
+                <p class="stat__text">
+                  Save on Compliance <br />
+                  Training
+                </p>
+              </div>
+              <div class="stat__data">
+                <h3 class="stat__value">2x</h3>
+                <p class="stat__text">Faster Quote-<br />to-Bind cycle</p>
+              </div>
+              <div class="stat__data">
+                <h3 class="stat__value">50<span>%</span></h3>
+                <p class="stat__text">
+                  Reduce <br />
+                  E&O risk
+                </p>
+              </div>
+              <div class="stat__data">
+                <h3 class="stat__value">40+</h3>
+                <p class="stat__text">
+                  Custom <br />
+                  review rules
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="stats__image">
+            <img src="./assets/images/stat.png" srcset="./assets/images/stat.png 1x, ./assets/images/stat-2x.png 2x" alt="Performance illustration" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Features Section -->
+      <section class="features">
+        <div class="container">
+          <div class="features__background"></div>
+          <div class="features__content">
+            <!-- Header -->
+            <div class="features__header">
+              <div class="badge">Your quotes</div>
+              <h2 class="title">Reviewed, flagged, automatically.</h2>
+              <p class="subtitle">Analyze patterns, flag recurring issues, and improve underwriting outcomes with every quote.</p>
+            </div>
+
+            <!-- Features Cards -->
+            <div class="swiper features__slider">
+              <div class="swiper-wrapper">
+                <!-- Card 1 -->
+                <div class="swiper-slide">
+                  <div class="features__card" data-feature="ai-review">
+                    <div class="features__icon">
+                      <!-- SVG for stacks-icon -->
+                      <svg class="icon-stacks" width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M13.6539 10.002V7.08465C13.6539 3.87559 16.292 1.25 19.5164 1.25H54.4175V30.4232C54.4175 33.6323 51.7793 36.2579 48.5549 36.2579"
+                          stroke="#565960"
+                          stroke-width="2.5"
+                          stroke-miterlimit="10"
+                        />
+                        <path
+                          class="fill"
+                          d="M7.44983 18.7539V15.8366C7.44983 12.6275 10.088 10.002 13.3124 10.002H48.2135V39.1752C48.2135 42.3843 45.5753 45.0098 42.3509 45.0098"
+                          stroke="#FDB61C"
+                          stroke-width="2.5"
+                          stroke-miterlimit="10"
+                        />
+                        <path
+                          d="M7.69882 18.7539H42.0136V47.3437C42.0136 50.8445 39.0823 53.7618 35.5648 53.7618H1.25V25.172C1.25 21.6712 4.18128 18.7539 7.69882 18.7539Z"
+                          stroke="#565960"
+                          stroke-width="2.5"
+                          stroke-miterlimit="10"
+                        />
+                      </svg>
+                    </div>
+                    <h3>AI-powered quote review</h3>
+                    <p class="features__card-description">Use our powerful AI review assistant to empower your Underwriting team.</p>
+                    <button class="features__expand" aria-label="Learn more">+</button>
+                  </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="swiper-slide">
+                  <div class="features__card" data-feature="notifications">
+                    <div class="features__icon">
+                      <!-- Inline SVG for bell-icon -->
+                      <svg width="48" height="57" viewBox="0 0 48 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_34_1427)">
+                          <path class="fill" d="M20.2193 25.4912H37.0193" stroke="#FDB61C" stroke-width="2.3" stroke-miterlimit="10" />
+                          <path class="fill" d="M20.2193 33.8911H33.4193" stroke="#FDB61C" stroke-width="2.3" stroke-miterlimit="10" />
+                          <path class="fill" d="M20.2193 42.291H31.0193" stroke="#FDB61C" stroke-width="2.3" stroke-miterlimit="10" />
+                          <path d="M34.3248 13.5004V3.90039H1.74756V46.3474H12.5476" stroke="#565960" stroke-width="2.3" stroke-miterlimit="10" />
+                          <path d="M11.7217 12.6675H45.499V42.3804C45.499 49.3842 39.7627 55.1145 32.7517 55.1145H11.7217V12.6675Z" stroke="#565960" stroke-width="2.3" stroke-miterlimit="10" />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_34_1427">
+                            <rect width="48" height="57" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </div>
+                    <h3 class="h9">Customized review rules</h3>
+                    <p class="features__card-description">
+                      Add your own list of custom rules to the already existing library of rules provided with the tool. These can be specific to carriers and policy types.
+                    </p>
+                    <button class="features__expand" aria-label="Learn more">+</button>
+                  </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="swiper-slide">
+                  <div class="features__card" data-feature="rules">
+                    <div class="features__icon">
+                      <!-- Inline SVG for files-icon -->
+                      <svg width="53" height="53" viewBox="0 0 53 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M18.9059 42.3096V44.4175C18.9059 47.8956 21.7517 50.7414 25.2298 50.7414C28.7079 50.7414 31.5537 47.8956 31.5537 44.4175V42.3096"
+                          stroke="#565960"
+                          stroke-width="2.5"
+                          stroke-miterlimit="10"
+                        />
+                        <path
+                          d="M25.1243 1.0083C32.2436 1.00854 37.9678 6.73278 37.9681 13.8521V19.0161C37.9681 21.5097 38.9814 23.8397 40.6722 25.6294L41.973 26.9302C41.1143 27.1965 40.3079 27.5816 39.5706 28.063L38.8909 27.3833L38.8782 27.3716L38.8665 27.3599C36.7691 25.1459 35.4681 22.2091 35.4681 19.0161V13.8521C35.4678 8.1135 30.8629 3.50854 25.1243 3.5083C19.3856 3.5083 14.7808 8.11335 14.7806 13.8521V18.9116C14.7805 22.076 13.6029 25.0324 11.3577 27.2778L7.05988 31.5757L6.75031 31.9175C5.24044 33.6587 4.34617 35.8566 4.34601 38.1987V41.0591H36.5472C37.1137 42.0104 37.8387 42.8562 38.6868 43.5591H1.84601V38.1987C1.84618 35.006 3.14806 32.0698 5.24542 29.856L5.25714 29.8433L9.59015 25.5103C11.3492 23.7509 12.2805 21.4378 12.2806 18.9116V13.8521C12.2808 6.73263 18.0049 1.0083 25.1243 1.0083Z"
+                          fill="#565960"
+                        />
+                        <circle class="fill" cx="45.8524" cy="36.5" r="4.5" fill="#FDB61C" />
+                      </svg>
+                    </div>
+                    <h3 class="h9">Internal notification for high risk items</h3>
+                    <p class="features__card-description">Create notifications to flag high risk quotes or re-occurring coverage problems so that your team can deal with them systematically.</p>
+                    <button class="features__expand" aria-label="Learn more">+</button>
+                  </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="swiper-slide">
+                  <div class="features__card" data-feature="tracking">
+                    <div class="features__icon">
+                      <!-- Inline SVG for chart-icon -->
+                      <svg width="59" height="57" viewBox="0 0 59 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_34_1472)">
+                          <path d="M17.2198 55.3992V23.7144H7.91833V55.3992" stroke="#565960" stroke-width="2.5" stroke-miterlimit="10" />
+                          <path class="fill" d="M34.4687 55.3988V3.88623H25.1672V55.3988" stroke="#FDB61C" stroke-width="2.5" stroke-miterlimit="10" />
+                          <path d="M1.29517 55.3984C1.29517 55.3984 37.4965 55.3984 58.2025 55.3984" stroke="#565960" stroke-width="2.5" stroke-miterlimit="10" />
+                          <path d="M51.7176 55.3986V34.2754H42.4161V55.3986" stroke="#565960" stroke-width="2.5" stroke-miterlimit="10" />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_34_1472">
+                            <rect width="58.2955" height="57" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </div>
+                    <h3 class="h9">Track results, action on issues</h3>
+                    <p class="features__card-description">Monitor how your team is performing and jump in when additional training is required.</p>
+                    <button class="features__expand" aria-label="Learn more">+</button>
+                  </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="swiper-slide">
+                  <div class="features__card" data-feature="tracking">
+                    <div class="features__icon">
+                      <!-- Inline SVG for chart-icon -->
+                      <svg width="56" height="57" viewBox="0 0 56 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M27.7724 55.1863C27.7724 55.1863 5.18262 47.4114 5.18262 25.0013V6.5931L27.7724 2.59131L50.3623 6.5931V25.0013C50.3623 47.64 27.7724 55.1863 27.7724 55.1863Z"
+                          stroke="#565960"
+                          stroke-width="2.5"
+                          stroke-miterlimit="10"
+                        />
+                        <path class="fill" d="M27.7695 12.8823V28.8895" stroke="#FDB61C" stroke-width="2.5" stroke-miterlimit="10" />
+                        <path
+                          class="fill"
+                          d="M27.7046 35C28.2569 35 28.7046 35.4477 28.7046 36C28.7046 36.5523 28.2569 37 27.7046 37C27.1523 37 26.7046 36.5523 26.7046 36C26.7046 35.4477 27.1523 35 27.7046 35Z"
+                          fill="#565960"
+                          stroke="#FDB61C"
+                          stroke-width="2"
+                        />
+                      </svg>
+                    </div>
+                    <h3 class="h9">Risk appetite assessment</h3>
+                    <p class="features__card-description">Determine if the Quote fits your brokerage's Risk Appetite, even if it can be bound.</p>
+                    <button class="features__expand" aria-label="Learn more">+</button>
+                  </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="swiper-slide">
+                  <div class="features__card" data-feature="tracking">
+                    <div class="features__icon">
+                      <!-- Inline SVG for chart-icon -->
+                      <svg width="48" height="60" viewBox="0 0 48 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_28_2004)">
+                          <path
+                            d="M40.874 12.2209C28.84 12.2209 14.4227 12.2209 14.4227 12.2209C8.78441 12.2209 4.17126 16.7609 4.17126 22.3097L4.17126 34.8324"
+                            stroke="#565960"
+                            stroke-width="2.5"
+                            stroke-miterlimit="10"
+                          />
+                          <path class="fill" d="M31.6357 22.3638L42.4531 12.2209L31.6357 1.09107" stroke="#FDB61C" stroke-width="2.5" stroke-miterlimit="10" />
+                          <path d="M4.92047 45.9294L32.3413 45.8405C37.9796 45.8405 42.5928 41.3006 42.5928 35.7518L42.5928 22.8311" stroke="#565960" stroke-width="2.5" stroke-miterlimit="10" />
+                          <path class="fill" d="M14.6554 56.4544L3.83789 46.3115L14.6554 35.1816" stroke="#FDB61C" stroke-width="2.5" stroke-miterlimit="10" />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_28_2004">
+                            <rect width="60" height="48" fill="white" transform="translate(48 2.09815e-06) rotate(90)" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </div>
+                    <span class="tag">Coming soon</span>
+                    <h3 class="h9">Automated audit review</h3>
+                    <p class="features__card-description">Use the tool to cross-reference and validate data on the quote with loss history reports, dec pages, etc.</p>
+                    <button class="features__expand" aria-label="Learn more">+</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slider Controls -->
+              <div class="swiper-pagination features__pagination"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature Details Popup -->
+        <div class="features__popup" id="featurePopup" hidden>
+          <div class="features__popup-overlay"></div>
+          <div class="features__popup-content">
+            <button class="features__popup-close" aria-label="Close popup">
+              <img src="./assets/images/features/x-icon-circle.svg" alt="" />
+            </button>
+            <div class="features__popup-icon">
+              <!-- Icon will be injected via JS -->
+            </div>
+            <h3 class="features__popup-title"></h3>
+            <p class="features__popup-description"></p>
+          </div>
+        </div>
+      </section>
+      <!-- Compliance Section -->
+      <section class="compliance">
+        <div class="container">
+          <div class="compliance__header">
+            <h2 class="compliance__headline">
+              The future of underwriting combines human expertise, with <span class="highlight"><span>intelligent</span> <span>automation.</span></span>
+            </h2>
+            <p class="compliance__lead">Give every underwriting team the tool they need to work with confidence, focus on growth, and deliver better outcomes for clients.</p>
+            <div class="compliance__symbol">
+              <img src="./assets/images/compliance-icon.svg" alt="decorative dots" width="28" height="28" />
+            </div>
+            <p class="compliance__text">Help your team, help your customers by:</p>
+          </div>
+
+          <div class="compliance__metrics">
+            <div class="compliance__item">
+              <h3 class="compliance__metric-title">Reducing</h3>
+              <p class="compliance__metric-sub">E&amp;O Risk</p>
+            </div>
+
+            <div class="compliance__divider" aria-hidden="true"></div>
+
+            <div class="compliance__item">
+              <h3 class="compliance__metric-title">30% Faster</h3>
+              <p class="compliance__metric-sub">Quote Submission</p>
+            </div>
+
+            <div class="compliance__divider" aria-hidden="true"></div>
+
+            <div class="compliance__item">
+              <h3 class="compliance__metric-title">Increase</h3>
+              <p class="compliance__metric-sub">Employee Satisfaction</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Training Section -->
+      <!-- Training  -->
+      <section class="training">
+        <div class="container training__wrapper">
+          <div class="training__content">
+            <span class="badge">Work smarter</span>
+            <h2 class="title">Faster training, quicker onboarding.</h2>
+
+            <div class="training__grid">
+              <ul class="training__list">
+                <li>
+                  <img src="./assets/images/add-contacts-icon.svg" alt="" />
+                  Can be used as practice and review tool
+                </li>
+                <li>
+                  <img src="./assets/images/filter-icon.svg" alt="" />
+                  Focus your team on the bottlenecks
+                </li>
+                <li>
+                  <img src="./assets/images/clock-icon.svg" alt="" />
+                  Reduced <br />
+                  training time
+                </li>
+                <li>
+                  <img src="./assets/images/add-contacts-1.svg" alt="" />
+                  Help new hires reduce errors
+                </li>
+                <li>
+                  <img src="./assets/images/add-contacts-2.svg" alt="" />
+                  Highlight the need for additional training
+                </li>
+                <li>
+                  <img src="./assets/images/book-search-icon.svg" alt="" />
+                  Review common rework issues on quotes
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="training__visual">
+            <picture>
+              <source media="(min-width:1024px)" srcset="./assets/images/training-lg.jpg 1x, ./assets/images/training-lg-2x.jpg 2x" />
+              <img src="./assets/images/training.jpg" srcset="./assets/images/training.jpg 1x, ./assets/images/training-2x.jpg 2x" alt="Risqly platform on monitor and reviews" />
+            </picture>
+          </div>
+        </div>
+      </section>
+      <!-- Performance Section -->
+      <section class="perf">
+        <div class="container">
+          <div class="perf__header">
+            <span class="badge">Productivity with</span>
+            <h2 class="title">
+              Performance <br />
+              in Mind.
+            </h2>
+            <p class="subtitle">Give your team the tools they need to multiply their productivity.</p>
+          </div>
+          <div class="perf__cards">
+            <div class="perf__card">
+              <img src="./assets/images/layers.svg" alt="" />
+              <h3>Handle quotes in parallel</h3>
+            </div>
+            <div class="perf__card">
+              <img src="./assets/images/scale-expand.svg" alt="" />
+              <h3>Scales with your workload</h3>
+            </div>
+            <div class="perf__card">
+              <img src="./assets/images/window.svg" alt="" />
+              <h3>Web-based: Does not slow down your infrastructure</h3>
+            </div>
+            <div class="perf__card">
+              <img src="./assets/images/dashboard.svg" alt="" />
+              <h3>Near 96% accuracy of data extraction</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Workflow Section -->
+      <section class="workflow">
+        <div class="container">
+          <div class="workflow__header">
+            <span class="badge">How Risqly™</span>
+            <h2 class="title">Fits into your workflow.</h2>
+          </div>
+
+          <div class="workflow__steps">
+            <!-- Step 1 -->
+            <div class="workflow__step">
+              <div class="workflow__step__content">
+                <div class="workflow__step-number">1</div>
+                <h3 class="workflow__step-title">Provide your team with a link and credentials.</h3>
+                <p class="workflow__step-description">All they need is access to a web browser, no app installation required.</p>
+              </div>
+              <div class="workflow__mockup">
+                <img src="./assets/images/browser-mockup.svg" alt="" />
+              </div>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="workflow__step">
+              <div class="workflow__step__content">
+                <div class="workflow__step-number">2</div>
+                <h3 class="workflow__step-title">Underwriter drag and drop quotes into the web-app.</h3>
+                <p class="workflow__step-description">The Risqly™ app can process multiple quotes in parallel, for both types of policies, auto or home.</p>
+              </div>
+              <div class="workflow__mockup workflow__mockup--browser">
+                <img src="./assets/images/drag-drop-mockup.svg" alt="" />
+              </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="workflow__step">
+              <div class="workflow__step__content">
+                <div class="workflow__step-number">3</div>
+                <h3 class="workflow__step-title">Report provided with flagged items in the quote.</h3>
+                <p class="workflow__step-description">Underwriter are provided with a report containing all the flagged issues for each uploaded quote.</p>
+              </div>
+              <div class="workflow__mockup">
+                <img src="./assets/images/reports-mockup.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Privacy Section -->
+      <section class="priv">
+        <div class="container">
+          <div class="priv__header">
+            <span class="badge">[ AI ] with a</span>
+            <h2 class="title">
+              Privacy-first <br />
+              mindset.
+            </h2>
+            <p class="subtitle">Empower your team without introducing additional risk. Risqly™ is built with a privacy-first mindset.</p>
+          </div>
+          <div class="priv__cards">
+            <div class="priv__card">
+              <img src="./assets/images/add-contacts-3.svg" alt="" />
+              <h3>PII is scrubbed before sending quotes to AI</h3>
+            </div>
+            <div class="priv__card">
+              <img src="./assets/images/globe.svg" alt="" />
+              <h3>Sensitive data does not leave your country</h3>
+            </div>
+            <div class="priv__card">
+              <img src="./assets/images/clipboard.svg" alt="" />
+              <h3>Stay compliant while introducing new tools</h3>
+            </div>
+            <div class="priv__card">
+              <img src="./assets/images/map-area.svg" alt="" />
+              <h3>Custom data residency settings for the entire report</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Waitlist Section -->
+      <section class="waitlist">
+        <div class="container">
+          <span class="badge">Co-Create Risqly™</span>
+
+          <h2 class="title">
+            Request <br />
+            early access.
+          </h2>
+          <p class="subtitle">Join our waitlist, it'll be great.</p>
+
+          <div class="waitlist__benefits">
+            <div class="benefit__item">
+              <img src="./assets/images/wallet.svg" alt="" class="benefit__item__icon" />
+              <p class="benefit__item__text">Founding-member perks and pricing</p>
+            </div>
+            <div class="benefit__item">
+              <img src="./assets/images/video.svg" alt="" class="benefit__item__icon" />
+              <p class="benefit__item__text">Behind-the-scenes updates</p>
+            </div>
+            <div class="benefit__item">
+              <img src="./assets/images/message.svg" alt="" class="benefit__item__icon" />
+              <p class="benefit__item__text">Ask anything so we can co-create Risqly™</p>
+            </div>
+            <div class="benefit__item">
+              <img src="./assets/images/users.svg" alt="" class="benefit__item__icon" />
+              <p class="benefit__item__text">One-on-one founder sessions</p>
+            </div>
+          </div>
+
+          <form class="waitlist__form" id="waitlistForm">
+            <div class="form__fields">
+              <div class="form__field form__field--select">
+                <select name="bmsName" class="form__field__input" id="bmsSelect">
+                  <option value="">BMS you are using</option>
+                  <option value="Acturis">Acturis</option>
+                  <option value="Applied EPIC">Applied EPIC</option>
+                  <option value="Applied TAM">Applied TAM</option>
+                  <option value="PowerBroker">PowerBroker</option>
+                  <option value="Vertafore SIG">Vertafore SIG</option>
+                  <option value="Vertafore AMS360">Vertafore AMS360</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+              <div class="form__field" id="otherBmsField" style="display: none">
+                <input type="text" name="otherBmsName" class="form__field__input" placeholder="Please specify your BMS" />
+              </div>
+              <div class="form__field">
+                <input type="text" name="firstName" class="form__field__input" placeholder="First Name" />
+              </div>
+              <div class="form__field">
+                <input type="text" name="lastName" class="form__field__input" placeholder="Last Name" />
+              </div>
+              <div class="form__field">
+                <input type="email" name="email" class="form__field__input" placeholder="Your Email" />
+              </div>
+            </div>
+
+            <div class="success__message">
+              <img src="./assets/images/check-circle-yellow.svg" alt="" class="success__message__icon" />
+              <h4 class="success__message__title">
+                Thank you for <br />
+                joining our waitlist.
+              </h4>
+              <p class="success__message__text">
+                You'll be receiving an email <br />
+                confirmation shortly.
+              </p>
+            </div>
+
+            <button type="submit" class="waitlist__form__submit">Join the Waitlist</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <!-- Top Section -->
+        <div class="footer__top">
+          <!-- Logo Column -->
+          <div class="footer__logo">
+            <a href="/">
+              <img src="./assets/images/risqly-logo-dark.svg" alt="Risqly™ Logo" width="161" />
+            </a>
+            <p class="footer__tagline">AI-powered underwriting assistant that gives you back time – literally.</p>
+          </div>
+
+          <!-- Navigation Columns -->
+          <div class="footer__nav">
+            <!-- Product Column -->
+            <div class="footer__nav-col">
+              <h4 class="footer__nav-title">EXPLORE</h4>
+              <ul>
+                <li><a href="#">Approach</a></li>
+                <li><a href="#">Impact</a></li>
+                <li><a href="#">Performance</a></li>
+                <li><a href="#">Benefits</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">How it Works</a></li>
+              </ul>
+            </div>
+
+            <!-- Technology Column -->
+            <div class="footer__nav-col">
+              <h4 class="footer__nav-title">CONNECT</h4>
+              <ul>
+                <li><a href="#">LinkedIn</a></li>
+                <li><a href="#">X</a></li>
+              </ul>
+            </div>
+
+            <!-- Company Column -->
+            <div class="footer__nav-col footer__nav-col--legal">
+              <h4 class="footer__nav-title">LEGAL</h4>
+              <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Section -->
+        <div class="footer__bottom">
+          <nav class="footer__legal">
+            <a href="#" class="footer__legal-link">Terms of Service</a>
+            <a href="#" class="footer__legal-link">Privacy Policy</a>
+          </nav>
+          <div class="footer__credit">website by <span>FIFTYSEVEN®</span></div>
+          <div class="footer__copyright">©2025 Risqly LLC</div>
+        </div>
+      </div>
+    </footer>
+    <div class="bg-bottom" style="background: linear-gradient(180deg, #0a1f4f 32.96%, #409ce5 51.03%, #f2f2f2 71.61%)"></div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
