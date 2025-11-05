@@ -522,6 +522,9 @@ h6 {
 .footer__logo {
   text-align: center;
 }
+.footer__logo img {
+  width: calc(161 * var(--scale));
+}
 
 .footer__tagline {
   font-size: calc(18 * var(--scale));
