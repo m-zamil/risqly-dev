@@ -42,7 +42,7 @@ const featuresSwiper = new Swiper(".features__slider", {
   },
 
   breakpoints: {
-    1024: {
+    768: {
       slidesPerView: 3,
       spaceBetween: 12,
       centeredSlides: false,
@@ -62,8 +62,9 @@ const popupClose = document.querySelector(".features__popup-close");
 const popupIconContainer = document.querySelector(".features__popup-icon");
 const popupTitle = document.querySelector(".features__popup-title");
 const popupDescription = document.querySelector(".features__popup-description");
+const popupTag = document.querySelector(".features__popup-tag");
 
-function openPopup(icon, title, description) {
+function openPopup(icon, title, description, tag) {
   // Clone the SVG from the card and inject into popup
   popupIconContainer.innerHTML = "";
   if (icon) {
@@ -71,11 +72,15 @@ function openPopup(icon, title, description) {
   }
   popupTitle.textContent = title;
   popupDescription.textContent = description;
+  if (tag) {
+    popupTag.textContent = tag.textContent;
+    popupTag.style.display = "block";
+  }
   featuresPopup.hidden = false;
   // Force reflow
   featuresPopup.offsetHeight;
   featuresPopup.classList.add("is-visible");
-  document.body.style.overflow = "hidden";
+  document.body.style.overflow = "clip";
 }
 
 function closePopup() {
@@ -91,7 +96,8 @@ featuresCards.forEach((card) => {
     const iconSvg = card.querySelector(".features__icon svg");
     const title = card.querySelector(".h9, h3").textContent;
     const description = card.querySelector(".features__card-description").textContent;
-    openPopup(iconSvg, title, description);
+    const tag = card.querySelector(".tag");
+    openPopup(iconSvg, title, description, tag);
   });
 });
 
