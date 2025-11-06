@@ -280,12 +280,17 @@ h6 {
    ========================================================== */
 
 .navbar {
-  background-color: #06122e;
   color: var(--white);
   width: 100%;
   padding: calc(16 * var(--scale)) calc(16 * var(--scale)) calc(10 * var(--scale));
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
   z-index: 1000;
+}
+.navbar.light-theme .navbar__menu {
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
 }
 
 .navbar__container {
@@ -307,9 +312,18 @@ h6 {
   line-height: 1;
   transition: color 0.2s;
 }
+.navbar.light-theme .navbar__menu a {
+  color: var(--dark);
+}
+.navbar.light-theme .navbar__menu a:hover {
+  background-color: var(--grey);
+}
 .navbar__logo {
   width: calc(108 * var(--scale));
   height: auto;
+}
+.navbar.light-theme .navbar__logo path {
+  fill: var(--dark);
 }
 
 .navbar__cta {
@@ -423,20 +437,6 @@ h6 {
   text-align: center;
   text-decoration: none;
   width: 100%;
-}
-
-/* Sticky Navbar Shadow */
-.navbar.sticky {
-  /* position: fixed; */
-  top: 0;
-  left: 0;
-  width: 100%;
-  box-shadow: 0 calc(4 * var(--scale)) calc(12 * var(--scale)) rgba(0, 0, 0, 0.2);
-  z-index: 1000;
-  transition: box-shadow 0.3s ease, background-color 0.3s ease;
-}
-.navbar.sticky {
-  backdrop-filter: blur(4px);
 }
 
 /* === RESPONSIVE === */

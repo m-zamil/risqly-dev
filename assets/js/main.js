@@ -31,6 +31,28 @@ window.addEventListener("scroll", () => {
   }
 });
 
+// --------- Navbar theme switch --------- //
+document.addEventListener("DOMContentLoaded", () => {
+  const navbar = document.getElementById("navbar");
+  const sections = document.querySelectorAll("[data-theme]");
+  console.log(sections);
+
+  window.addEventListener("scroll", () => {
+    const scrollY = window.scrollY + 0; // simulate “80px from top”
+    sections.forEach((section) => {
+      const rect = section.getBoundingClientRect();
+      const sectionTop = window.scrollY + rect.top;
+      const sectionBottom = sectionTop + rect.height;
+
+      if (scrollY >= sectionTop && scrollY < sectionBottom) {
+        const currentTheme = section.getAttribute("data-theme");
+        navbar.classList.remove("light-theme", "dark-theme");
+        navbar.classList.add(`${currentTheme}-theme`);
+      }
+    });
+  });
+});
+
 // Initialize Features Swiper
 const featuresSwiper = new Swiper(".features__slider", {
   slidesPerView: 1,
