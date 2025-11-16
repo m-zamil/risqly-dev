@@ -20,10 +20,6 @@
 }
 
 .hero__label {
-  font-weight: 400;
-  font-size: calc(14 * var(--scale));
-  line-height: 100%;
-  letter-spacing: var(--letter-normal);
   display: inline-flex;
   align-items: center;
   gap: calc(6 * var(--scale));
@@ -33,7 +29,7 @@
   border-radius: calc(100 * var(--scale));
   color: var(--white);
 }
-.hero__label span {
+.hero__label .star {
   font-size: calc(10 * var(--scale));
 }
 
@@ -48,10 +44,6 @@
 }
 
 .hero__description {
-  font-size: calc(18 * var(--scale));
-  font-weight: 400;
-  line-height: 130%;
-  letter-spacing: 0.02em;
   color: var(--white-70);
   margin-top: calc(20 * var(--scale));
   max-width: 30ch;
@@ -121,11 +113,9 @@
   }
 
   .hero__label {
-    font-size: calc(14 * var(--scale));
-    letter-spacing: var(--letter-xloose);
     gap: calc(4 * var(--scale));
   }
-  .hero__label span {
+  .hero__label .star {
     font-size: calc(12 * var(--scale));
   }
   .hero__text {
@@ -199,10 +189,6 @@
   display: inline-block;
   background-color: var(--yellow);
   color: var(--dark);
-  font-size: calc(14 * var(--scale));
-  font-weight: 600;
-  line-height: 1;
-  letter-spacing: 0.03em;
   padding: calc(6 * var(--scale)) calc(8 * var(--scale));
   border-radius: calc(5 * var(--scale));
   margin-bottom: calc(10 * var(--scale));
@@ -376,9 +362,6 @@
   margin-left: calc(-10 * var(--scale));
 }
 .stat__text {
-  font-size: calc(16 * var(--scale));
-  font-weight: 500;
-  line-height: 1.3;
   margin-top: calc(2 * var(--scale));
   padding-left: calc(4 * var(--scale));
 }
@@ -507,7 +490,8 @@
 .features__icon {
   display: flex;
 }
-.features__icon img {
+.features__icon img,
+.features__icon svg {
   height: auto;
 }
 .icon-stacks {
@@ -544,21 +528,13 @@
 }
 
 .features__card h3 {
-  font-size: calc(25 * var(--scale));
-  font-weight: 450;
-  line-height: 110%;
-  letter-spacing: 0.02em;
   margin-top: calc(12 * var(--scale));
 }
 
 .features__card-description {
-  font-weight: 400;
-  font-size: calc(16 * var(--scale));
-  line-height: 130%;
   color: var(--white-50);
   max-width: 28ch;
   margin-top: calc(12 * var(--scale));
-  letter-spacing: 0.02em;
 }
 
 .features__expand {
@@ -839,7 +815,6 @@
     padding: calc(2 * var(--scale)) calc(3 * var(--scale));
   }
   .features__card h3 {
-    font-size: calc(22 * var(--scale));
     color: white;
     transition: all 0.2s;
     margin-top: 0;
@@ -877,10 +852,6 @@
 }
 
 .compliance__headline {
-  font-size: calc(46 * var(--scale));
-  font-weight: 500;
-  line-height: 0.9;
-  letter-spacing: -0.03em;
   color: var(--dark);
 }
 .compliance__headline .highlight span {
@@ -904,10 +875,7 @@
 }
 .compliance__lead,
 .compliance__text {
-  font-size: calc(18 * var(--scale));
-  line-height: 1.3;
   color: var(--dark-50);
-  letter-spacing: 0.02em;
   max-width: calc(720 * var(--scale));
   margin-top: calc(24 * var(--scale));
 }
@@ -936,18 +904,11 @@
   text-align: left;
 }
 .compliance__metric-title {
-  font-size: calc(28 * var(--scale));
-  font-weight: 450;
-  line-height: 1;
   color: var(--dark);
-  letter-spacing: -0.01em;
 }
 
 .compliance__metric-sub {
-  font-size: calc(14 * var(--scale));
-  letter-spacing: 0.02em;
   color: var(--dark);
-  line-height: 1;
   padding: calc(14 * var(--scale)) 0 calc(16 * var(--scale));
 }
 .compliance__item:not(:last-child) .compliance__metric-sub {
@@ -975,7 +936,6 @@
     align-items: center;
   }
   .compliance__headline {
-    font-size: calc(80 * var(--scale));
     max-width: 18ch;
   }
 
@@ -1037,12 +997,7 @@
     align-self: center;
   }
 
-  .compliance__metric-title {
-    font-size: calc(50 * var(--scale));
-  }
   .compliance__metric-sub {
-    font-size: calc(18 * var(--scale));
-    font-weight: 500;
     padding: calc(13 * var(--scale)) 0 0 calc(3 * var(--scale));
     border-bottom: 0 !important;
   }
@@ -1082,12 +1037,29 @@
   gap: calc(10 * var(--scale));
   align-items: flex-start;
   color: var(--dark);
-  font-size: calc(18 * var(--scale));
-  line-height: 1.3;
-  letter-spacing: 0.02em;
 }
 .training__list li img {
+  height: auto;
   padding-top: calc(6 * var(--scale));
+  flex-shrink: 0;
+}
+.training__list li .icon-1 {
+  width: calc(30 * var(--scale));
+}
+.training__list li .icon-2 {
+  width: calc(26 * var(--scale));
+}
+.training__list li .icon-3 {
+  width: calc(26 * var(--scale));
+}
+.training__list li .icon-4 {
+  width: calc(26 * var(--scale));
+}
+.training__list li .icon-5 {
+  width: calc(30 * var(--scale));
+}
+.training__list li .icon-6 {
+  width: calc(23 * var(--scale));
 }
 
 .training__visual img {
@@ -1166,10 +1138,6 @@
   align-items: start;
 }
 .perf__card h3 {
-  font-size: calc(22 * var(--scale));
-  font-weight: 450;
-  line-height: 1.1;
-  letter-spacing: 0.02em;
   padding-top: calc(60 * var(--scale));
 }
 .perf__card img {
@@ -1217,6 +1185,7 @@
   }
   .perf__card h3 {
     font-size: calc(24 * var(--scale));
+    line-height: 100%;
     padding-top: calc(136 * var(--scale));
     max-width: 16ch;
   }
@@ -1227,6 +1196,7 @@
    ========================================================== */
 .workflow {
   padding: calc(150 * var(--scale)) 0;
+  overflow-x: clip;
 }
 
 .workflow__steps {
@@ -1255,20 +1225,13 @@
 }
 
 .workflow__step-title {
-  font-size: calc(24 * var(--scale));
-  font-weight: 500;
-  line-height: 1;
-  letter-spacing: -0.01em;
   color: var(--dark);
   margin-top: calc(14 * var(--scale));
   max-width: 20ch;
 }
 
 .workflow__step-description {
-  font-size: calc(18 * var(--scale));
-  line-height: 1.3;
   color: var(--dark-50);
-  letter-spacing: 0.02em;
   max-width: 30ch;
   margin-top: calc(12 * var(--scale));
 }
@@ -1277,8 +1240,8 @@
   margin-top: calc(32 * var(--scale));
 }
 .workflow__mockup img {
-  width: 100%;
-  filter: drop-shadow(0 calc(76.674 * var(--scale)) calc(53.672 * var(--scale)) rgba(0, 0, 0, 0.06));
+  margin: 0 calc(-53 * var(--scale)) calc(-133 * var(--scale));
+  width: calc(100% + 106 * var(--scale));
 }
 
 @media (min-width: 768px) {
@@ -1315,6 +1278,10 @@
     flex-shrink: 0;
     margin-top: 0;
   }
+  .workflow__mockup img {
+    margin: 0 calc(-102 * var(--scale)) calc(-255 * var(--scale));
+    width: calc(100% + 204 * var(--scale));
+  }
   .workflow__step__content {
     width: 34%;
     padding-bottom: calc(24 * var(--scale));
@@ -1326,7 +1293,6 @@
   }
 
   .workflow__step-title {
-    font-size: calc(30 * var(--scale));
     margin-top: calc(23 * var(--scale));
   }
   .workflow__step-description {
@@ -1389,10 +1355,6 @@
   width: calc(44 * var(--scale));
 }
 .priv__card h3 {
-  font-size: calc(22 * var(--scale));
-  font-weight: 450;
-  line-height: 1.1;
-  letter-spacing: 0.02em;
   padding-top: calc(62 * var(--scale));
   max-width: calc(238 * var(--scale));
 }
@@ -1512,9 +1474,6 @@
   width: calc(32 * var(--scale));
 }
 .benefit__item__text {
-  font-size: calc(16 * var(--scale));
-  line-height: 130%;
-  letter-spacing: 0.02em;
   color: var(--dark);
   margin-top: calc(10 * var(--scale));
 }
@@ -1551,9 +1510,6 @@
   border-radius: calc(8 * var(--scale));
   border: none;
   padding: 0 calc(16 * var(--scale)) 0 calc(112 * var(--scale));
-  font-size: calc(16 * var(--scale));
-  line-height: 130%;
-  letter-spacing: 0.02em;
   color: var(--dark);
 }
 select.form__field__input {
@@ -1617,10 +1573,6 @@ select.form__field__input {
   border: none;
   padding: calc(16 * var(--scale));
   margin-top: calc(8 * var(--scale));
-  font-weight: 600;
-  font-size: calc(13 * var(--scale));
-  line-height: 100%;
-  letter-spacing: 0.02em;
   text-transform: uppercase;
   color: var(--dark);
   cursor: pointer;
@@ -1657,19 +1609,11 @@ select.form__field__input {
 }
 
 .success__message__title {
-  font-weight: 450;
-  font-size: calc(24 * var(--scale));
-  line-height: 110%;
-  letter-spacing: 0.01em;
   color: var(--dark);
   margin-bottom: calc(15 * var(--scale));
 }
 
 .success__message__text {
-  font-weight: 400;
-  font-size: calc(16 * var(--scale));
-  line-height: 130%;
-  letter-spacing: 0.02em;
   color: var(--dark-50);
 }
 
@@ -1684,6 +1628,7 @@ select.form__field__input {
   .waitlist {
     padding: calc(200 * var(--scale)) 0 calc(238 * var(--scale));
     background-image: url("../images/waitlist-bg-2x.png");
+    background-image: image-set(url("../images/waitlist-bg.png") 1x, url("../images/waitlist-bg-2x.png") 2x);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

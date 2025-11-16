@@ -20,19 +20,8 @@
   --grey-70: rgba(249, 249, 249, 0.7);
 
   /* === Font Tokens === */
-  --font-family-base: "Aspekta", sans-serif;
-  --regular: 400;
-  --medium: 500;
-  --semibold: 550;
-  --bold: 600;
-  --light: 450;
+  --font-base: "Aspekta", sans-serif;
 
-  /* === Letter-spacing === */
-  --letter-tight: -0.03em;
-  --letter-medium: -0.01em;
-  --letter-normal: 0em;
-  --letter-loose: 0.02em;
-  --letter-xloose: 0.03em;
   /* Responsive scale: default = mobile (base 375 px) */
   --scale: calc(100vw / 375);
 }
@@ -61,8 +50,8 @@ body {
   margin: 0;
   color: var(--dark);
   background-color: var(--grey);
-  font-family: var(--font-family-base);
-  font-weight: var(--regular);
+  font-family: var(--font-base);
+  font-weight: 400;
   line-height: 1.5;
   font-feature-settings: "ss02" on, "ss05" on, "ss08" on;
   text-rendering: optimizeLegibility;
@@ -115,110 +104,118 @@ label {
 }
 
 /* ==========================================================
-   TYPOGRAPHY SCALE
+   TYPOGRAPHY SCALE HEADINGS
    ========================================================== */
 
 /* ---- MOBILE (default) ---- */
 
-h1 {
+h1,
+.h1 {
   font-weight: 500;
   font-size: calc(54 * var(--scale));
   line-height: 100%;
-  letter-spacing: var(--letter-tight);
+  letter-spacing: -0.03em;
 }
 
-h2 {
+h2,
+.h2 {
   font-weight: 500;
   font-size: calc(46 * var(--scale));
   line-height: 100%;
-  letter-spacing: var(--letter-tight);
+  letter-spacing: -0.03em;
 }
 
-h3 {
+h3,
+.h3 {
   font-weight: 500;
   font-size: calc(46 * var(--scale));
   line-height: 90%;
-  letter-spacing: var(--letter-tight);
+  letter-spacing: -0.03em;
 }
 
-h4 {
+h4,
+.h4 {
   font-weight: 450;
   font-size: calc(28 * var(--scale));
   line-height: 100%;
-  letter-spacing: var(--letter-medium);
+  letter-spacing: -0.01em;
 }
 
 h5,
 .h5 {
-  font-weight: 550;
   font-size: calc(26 * var(--scale));
+  font-weight: 550;
   line-height: 100%;
-  letter-spacing: var(--letter-normal);
+  letter-spacing: 0;
 }
 
-h6 {
+h6,
+.h6 {
   font-weight: 450;
   font-size: calc(25 * var(--scale));
   line-height: 110%;
-  letter-spacing: var(--letter-loose);
+  letter-spacing: 0.02em;
 }
 
 .h7 {
   font-weight: 550;
   font-size: calc(26 * var(--scale));
   line-height: 130%;
-  letter-spacing: var(--letter-medium);
+  letter-spacing: -0.01em;
 }
 
 .h8 {
   font-weight: 500;
   font-size: calc(24 * var(--scale));
   line-height: 100%;
-  letter-spacing: var(--letter-medium);
+  letter-spacing: -0.01em;
 }
 
 .h9 {
   font-weight: 450;
   font-size: calc(22 * var(--scale));
   line-height: 110%;
-  letter-spacing: var(--letter-loose);
+  letter-spacing: 0.01em;
 }
 
 .h10 {
   font-weight: 500;
   font-size: calc(20 * var(--scale));
   line-height: 110%;
-  letter-spacing: var(--letter-normal);
+  letter-spacing: 0;
 }
 
 /* ---- DESKTOP (≥1024px) ---- */
 @media (min-width: 768px) {
-  h1 {
+  h1,
+  .h1 {
     font-weight: 500;
-    font-size: calc(64 * var(--scale));
-    line-height: 100%;
-    letter-spacing: var(--letter-tight);
+    font-size: calc(80 * var(--scale));
+    line-height: 90%;
+    letter-spacing: -0.03em;
   }
-
-  h2 {
+  h2,
+  .h2 {
     font-weight: 500;
     font-size: calc(80 * var(--scale));
     line-height: 100%;
-    letter-spacing: var(--letter-tight);
+    letter-spacing: -0.03em;
   }
 
-  h3 {
+  h3,
+  .h3 {
     font-weight: 500;
     font-size: calc(64 * var(--scale));
     line-height: 100%;
-    letter-spacing: var(--letter-tight);
+    letter-spacing: -0.03em;
   }
 
-  h4 {
+  h4,
+  .h4 {
     font-weight: 450;
     font-size: calc(50 * var(--scale));
     line-height: 100%;
-    letter-spacing: var(--letter-medium);
+    letter-spacing: -0.01em;
   }
 
   h5,
@@ -226,28 +223,30 @@ h6 {
     font-weight: 500;
     font-size: calc(30 * var(--scale));
     line-height: 100%;
-    letter-spacing: var(--letter-medium);
+    letter-spacing: -0.01em;
   }
 
-  h6 {
+  h6,
+  .h6 {
     font-weight: 400;
     font-size: calc(28 * var(--scale));
     line-height: 110%;
-    letter-spacing: var(--letter-normal);
+    letter-spacing: 0;
   }
 
   .h7 {
     font-weight: 550;
     font-size: calc(26 * var(--scale));
     line-height: 130%;
-    letter-spacing: var(--letter-medium);
+    letter-spacing: -0.01em;
   }
 
   .h8 {
     font-weight: 450;
     font-size: calc(24 * var(--scale));
+
     line-height: 110%;
-    letter-spacing: var(--letter-loose);
+    letter-spacing: 0.01em;
   }
 
   .h9 {
@@ -261,7 +260,256 @@ h6 {
     font-weight: 500;
     font-size: calc(20 * var(--scale));
     line-height: 130%;
-    letter-spacing: var(--letter-normal);
+    letter-spacing: 0;
+  }
+}
+@media (min-width: 768px) {
+  .h1-desktop {
+    font-weight: 500;
+    font-size: calc(80 * var(--scale));
+    line-height: 90%;
+    letter-spacing: -0.03em;
+  }
+
+  .h2-desktop {
+    font-weight: 500;
+    font-size: calc(80 * var(--scale));
+    line-height: 100%;
+    letter-spacing: -0.03em;
+  }
+
+  .h3-desktop {
+    font-weight: 500;
+    font-size: calc(64 * var(--scale));
+    line-height: 100%;
+    letter-spacing: -0.03em;
+  }
+
+  .h4-desktop {
+    font-weight: 450;
+    font-size: calc(50 * var(--scale));
+    line-height: 100%;
+    letter-spacing: -0.01em;
+  }
+
+  .h5-desktop {
+    font-weight: 500;
+    font-size: calc(30 * var(--scale));
+    line-height: 100%;
+    letter-spacing: -0.01em;
+  }
+
+  .h6-desktop {
+    font-weight: 400;
+    font-size: calc(28 * var(--scale));
+    line-height: 110%;
+    letter-spacing: 0;
+  }
+
+  .h7-desktop {
+    font-weight: 550;
+    font-size: calc(26 * var(--scale));
+    line-height: 130%;
+    letter-spacing: -0.01em;
+  }
+
+  .h8-desktop {
+    font-weight: 450;
+    font-size: calc(24 * var(--scale));
+
+    line-height: 110%;
+    letter-spacing: 0.01em;
+  }
+
+  .h9-desktop {
+    font-weight: 450;
+    font-size: calc(22 * var(--scale));
+    line-height: 110%;
+    letter-spacing: 0.02em;
+  }
+
+  .h10-desktop {
+    font-weight: 500;
+    font-size: calc(20 * var(--scale));
+    line-height: 130%;
+    letter-spacing: 0;
+  }
+}
+
+/* ==========================================================
+   TYPOGRAPHY SCALE BODY
+   ========================================================== */
+
+.text-b1 {
+  font-weight: 400;
+  font-size: calc(18 * var(--scale));
+  line-height: 130%;
+  letter-spacing: 0.02em;
+}
+.text-b2 {
+  font-weight: 500;
+  font-size: calc(16 * var(--scale));
+  line-height: 130%;
+  letter-spacing: 0;
+}
+.text-b3 {
+  font-weight: 400;
+  font-size: calc(16 * var(--scale));
+  line-height: 130%;
+  letter-spacing: 0.02em;
+}
+.text-b4 {
+  font-weight: 400;
+  font-size: calc(14 * var(--scale));
+  line-height: 100%;
+  letter-spacing: 0.02em;
+}
+@media (min-width: 1024px) {
+  .text-b1 {
+    font-weight: 500;
+    font-size: calc(18 * var(--scale));
+    line-height: 130%;
+    letter-spacing: 0.02em;
+  }
+  .text-b2 {
+    font-weight: 400;
+    font-size: calc(18 * var(--scale));
+    line-height: 130%;
+    letter-spacing: 0.02em;
+  }
+  .text-b3 {
+    font-weight: 500;
+    font-size: calc(16 * var(--scale));
+    line-height: 130%;
+    letter-spacing: 0;
+  }
+  .text-b4 {
+    font-weight: 400;
+    font-size: calc(16 * var(--scale));
+    line-height: 130%;
+    letter-spacing: 0.02em;
+  }
+}
+@media (min-width: 1024px) {
+  .text-b1-desktop {
+    font-weight: 500;
+    font-size: calc(18 * var(--scale));
+    line-height: 130%;
+    letter-spacing: 0.02em;
+  }
+
+  .text-b2-desktop {
+    font-weight: 400;
+    font-size: calc(18 * var(--scale));
+    line-height: 130%;
+    letter-spacing: 0.02em;
+  }
+
+  .text-b3-desktop {
+    font-weight: 500;
+    font-size: calc(16 * var(--scale));
+    line-height: 130%;
+    letter-spacing: 0;
+  }
+
+  .text-b4-desktop {
+    font-weight: 400;
+    font-size: calc(16 * var(--scale));
+    line-height: 130%;
+    letter-spacing: 0.02em;
+  }
+}
+
+/* ==========================================================
+   CTA & Links & Label
+   ========================================================== */
+
+.link-1 {
+  font-weight: 400;
+  font-size: calc(22 * var(--scale));
+  line-height: 80%;
+  letter-spacing: 0.02em;
+}
+@media (min-width: 768px) {
+  .link-1 {
+    font-weight: 400;
+    font-size: calc(18 * var(--scale));
+    line-height: 80%;
+    letter-spacing: 0.02em;
+  }
+}
+
+.link-2 {
+  font-weight: 400;
+  font-size: calc(14 * var(--scale));
+  line-height: 100%;
+  letter-spacing: 0.02em;
+}
+@media (min-width: 768px) {
+  .link-2,
+  .link-2-desktop {
+    font-weight: 400;
+    font-size: calc(14 * var(--scale));
+    line-height: 100%;
+    letter-spacing: 0.02em;
+  }
+}
+.nav-link {
+  font-weight: 400;
+  font-size: calc(15 * var(--scale));
+  line-height: 100%;
+  letter-spacing: 0;
+}
+
+.label-1 {
+  font-weight: 600;
+  font-size: calc(14 * var(--scale));
+  line-height: 100%;
+  letter-spacing: 0.03em;
+}
+@media (min-width: 768px) {
+  .label-1 {
+    font-weight: 600;
+    font-size: calc(14 * var(--scale));
+    line-height: 100%;
+    letter-spacing: 0.03em;
+  }
+}
+
+.label-2 {
+  font-weight: 400;
+  font-size: calc(14 * var(--scale));
+  line-height: 100%;
+  letter-spacing: 0;
+}
+@media (min-width: 768px) {
+  .label-2 {
+    font-weight: 400;
+    font-size: calc(14 * var(--scale));
+    line-height: 100%;
+    letter-spacing: 0.03em;
+  }
+}
+
+.btn-1 {
+  font-weight: 600;
+  font-size: calc(13 * var(--scale));
+  line-height: 100%;
+  letter-spacing: 0.02em;
+}
+
+.btn-2 {
+  font-weight: 600;
+  font-size: calc(10 * var(--scale));
+  line-height: 100%;
+  letter-spacing: 0.02em;
+}
+@media (min-width: 1024px) {
+  .btn-2 {
+    font-weight: 600;
+    font-size: calc(12 * var(--scale));
+    line-height: 100%;
+    letter-spacing: 0.02em;
   }
 }
 
@@ -304,20 +552,6 @@ h6 {
   display: none;
 }
 
-.navbar__menu a {
-  color: var(--white);
-  text-decoration: none;
-  font-size: calc(15 * var(--scale));
-  font-weight: 400;
-  line-height: 1;
-  transition: color 0.2s;
-}
-.navbar.light-theme .navbar__menu a {
-  color: var(--dark);
-}
-.navbar.light-theme .navbar__menu a:hover {
-  background-color: var(--grey);
-}
 .navbar__logo {
   width: calc(108 * var(--scale));
   height: auto;
@@ -327,10 +561,6 @@ h6 {
 }
 
 .navbar__cta {
-  font-weight: 600;
-  font-size: calc(10 * var(--scale));
-  line-height: 100%;
-  letter-spacing: var(--letter-loose);
   text-transform: uppercase;
   background-color: var(--yellow);
   color: var(--dark);
@@ -363,6 +593,9 @@ h6 {
   background-color: var(--white);
   border-radius: calc(2 * var(--scale));
 }
+.navbar.light-theme .navbar__toggle .bar {
+  background-color: var(--dark);
+}
 
 /* === MOBILE MENU OVERLAY === */
 .menu-overlay {
@@ -388,11 +621,25 @@ h6 {
   backdrop-filter: blur(22px);
 }
 
+.navbar.light-theme + .menu-overlay .menu-overlay__content {
+  background-color: rgba(255, 255, 255, 0.95);
+}
+
 .menu-overlay__header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: calc(24 * var(--scale));
+}
+.menu-overlay__logo {
+  width: calc(108 * var(--scale));
+  height: auto;
+}
+.navbar.light-theme + .menu-overlay .menu-overlay__logo path {
+  fill: var(--dark);
+}
+.navbar.light-theme + .menu-overlay .menu-overlay__close path {
+  stroke: var(--dark);
 }
 
 .menu-overlay__close {
@@ -402,6 +649,10 @@ h6 {
   color: var(--white);
   cursor: pointer;
 }
+.menu-overlay__close svg {
+  width: calc(22 * var(--scale));
+  height: auto;
+}
 
 .menu-overlay__links {
   display: flex;
@@ -410,24 +661,20 @@ h6 {
 }
 
 .menu-overlay__links a {
-  font-weight: 400;
-  font-size: calc(22 * var(--scale));
-  line-height: 80%;
-  letter-spacing: var(--letter-loose);
   color: var(--white);
   text-decoration: none;
   padding: calc(20 * var(--scale)) 0;
   border-bottom: calc(1 * var(--scale)) solid rgba(255, 255, 255, 0.1);
+}
+.navbar.light-theme + .menu-overlay .menu-overlay__links a {
+  color: var(--dark);
+  border-bottom-color: rgba(13, 28, 61, 0.1);
 }
 .menu-overlay__links a:last-child {
   border-bottom: 0;
 }
 
 .menu-overlay__cta {
-  font-weight: 600;
-  font-size: calc(10 * var(--scale));
-  line-height: 100%;
-  letter-spacing: var(--letter-loose);
   text-transform: uppercase;
   display: inline-block;
   background-color: var(--yellow);
@@ -457,7 +704,6 @@ h6 {
   }
 
   .navbar__cta {
-    font-size: calc(12 * var(--scale));
     margin-left: 0;
     margin-right: 0;
     padding: calc(16 * var(--scale));
@@ -466,15 +712,6 @@ h6 {
 
   .menu-overlay {
     display: none !important;
-  }
-  .menu-overlay__links a {
-    font-weight: 400;
-    font-size: calc(18 * var(--scale));
-    line-height: 80%;
-    letter-spacing: var(--letter-loose);
-  }
-  .menu-overlay__cta {
-    font-size: calc(12 * var(--scale));
   }
   .navbar {
     padding: calc(15 * var(--scale)) calc(30 * var(--scale));
@@ -486,11 +723,20 @@ h6 {
     width: calc(144 * var(--scale));
   }
   .navbar__menu a {
+    color: var(--white);
+    text-decoration: none;
+    transition: color 0.2s;
     padding: calc(9 * var(--scale)) calc(12 * var(--scale));
     border-radius: calc(4 * var(--scale));
   }
   .navbar__menu a:hover {
     background: rgba(0, 0, 0, 0.35);
+  }
+  .navbar.light-theme .navbar__menu a {
+    color: var(--dark);
+  }
+  .navbar.light-theme .navbar__menu a:hover {
+    background-color: var(--grey);
   }
 }
 
@@ -527,9 +773,10 @@ h6 {
 }
 
 .footer__tagline {
-  font-size: calc(18 * var(--scale));
-  line-height: 130%;
-  letter-spacing: 0.02em;
+  font-weight: 400;
+  font-size: calc(28 * var(--scale));
+  line-height: 110%;
+  letter-spacing: 0;
   color: white;
   margin-top: calc(18 * var(--scale));
   max-width: 20ch;
@@ -563,9 +810,6 @@ h6 {
 }
 
 .footer__nav-col a {
-  font-size: calc(22 * var(--scale));
-  line-height: 0.8;
-  letter-spacing: 0.02em;
   color: var(--white-50);
   text-decoration: none;
   transition: color 0.2s;
@@ -637,8 +881,6 @@ h6 {
   }
 
   .footer__tagline {
-    font-size: calc(28 * var(--scale));
-    line-height: 1.1;
     max-width: 20ch;
     margin-top: 0;
     text-align: left;
@@ -665,7 +907,6 @@ h6 {
     margin-bottom: calc(4 * var(--scale));
   }
   .footer__nav-col a {
-    font-size: calc(18 * var(--scale));
     padding: calc(11 * var(--scale));
     display: inline-block;
     border-radius: calc(4 * var(--scale));

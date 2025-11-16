@@ -35,6 +35,7 @@ window.addEventListener("scroll", () => {
 document.addEventListener("DOMContentLoaded", () => {
   const navbar = document.getElementById("navbar");
   const sections = document.querySelectorAll("[data-theme]");
+  const navbarCta = document.querySelector(".navbar__cta");
   console.log(sections);
 
   window.addEventListener("scroll", () => {
@@ -48,6 +49,13 @@ document.addEventListener("DOMContentLoaded", () => {
         const currentTheme = section.getAttribute("data-theme");
         navbar.classList.remove("light-theme", "dark-theme");
         navbar.classList.add(`${currentTheme}-theme`);
+        if (section.id === "waitlist") {
+          navbarCta.textContent = "Follow us  ( LI ) & ( x )";
+          navbarCta.href = "#footer";
+        } else {
+          navbarCta.textContent = "JOIN THE WAITLIST";
+          navbarCta.href = "#waitlist";
+        }
       }
     });
   });
