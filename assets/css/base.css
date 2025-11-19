@@ -185,7 +185,7 @@ h6,
   letter-spacing: 0;
 }
 
-/* ---- DESKTOP (≥1024px) ---- */
+/* ---- DESKTOP (≥768px) ---- */
 @media (min-width: 768px) {
   h1,
   .h1 {
@@ -364,7 +364,7 @@ h6,
   line-height: 100%;
   letter-spacing: 0.02em;
 }
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .text-b1 {
     font-weight: 500;
     font-size: calc(18 * var(--scale));
@@ -390,7 +390,7 @@ h6,
     letter-spacing: 0.02em;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .text-b1-desktop {
     font-weight: 500;
     font-size: calc(18 * var(--scale));
@@ -504,7 +504,7 @@ h6,
   line-height: 100%;
   letter-spacing: 0.02em;
 }
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .btn-2 {
     font-weight: 600;
     font-size: calc(12 * var(--scale));
@@ -570,10 +570,26 @@ h6,
   transition: background 0.2s;
   margin-left: auto;
   margin-right: calc(16 * var(--scale));
+  display: flex;
 }
 
-.navbar__cta:hover {
-  background-color: #e1a619;
+.navbar__cta-overflow {
+  flex-flow: column;
+  height: calc(14 * var(--scale));
+  display: flex;
+  overflow: hidden;
+}
+
+.navbar__cta-text {
+  flex: none;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  transition: all 0.3s;
+  display: flex;
+}
+.navbar__cta:hover .navbar__cta-text {
+  transform: translate(0px, -100%);
 }
 
 /* Hamburger (Mobile) */
@@ -706,7 +722,7 @@ h6,
   .navbar__cta {
     margin-left: 0;
     margin-right: 0;
-    padding: calc(16 * var(--scale));
+    padding: calc(15 * var(--scale)) calc(16 * var(--scale));
     border-radius: calc(8 * var(--scale));
   }
 

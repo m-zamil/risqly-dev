@@ -40,6 +40,7 @@
     <link rel="manifest" href="./assets/images/favicon/site.webmanifest" />
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <link rel="stylesheet" href="./assets/css/base.css" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
   </head>
@@ -48,7 +49,7 @@
       <div class="navbar__container">
         <!-- Logo -->
 
-        <svg class="navbar__logo" width="108" height="40" viewBox="0 0 108 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="navbar__logo box" width="108" height="40" viewBox="0 0 108 40" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M106.31 15.0909L105.61 13.0586V15.0909H105.083V12.3812H105.885L106.544 14.4097L107.198 12.3812H108V15.0909H107.473V13.0624L106.777 15.0909H106.31Z" fill="white" />
           <path d="M103.315 15.0909V12.8742H102.461V12.3812H104.726V12.8742H103.872V15.0909H103.315Z" fill="white" />
           <path d="M91.7928 31.3351L93.578 26.9038L89.1467 16.214H91.7718L94.7541 24.1106L97.7153 16.214H100.319L94.145 31.3351H91.7928Z" fill="white" />
@@ -127,7 +128,12 @@
         </nav>
 
         <!-- CTA -->
-        <a href="#waitlist" class="navbar__cta btn-2">Join the Waitlist</a>
+        <a href="#waitlist" class="navbar__cta btn-2">
+          <span class="navbar__cta-overflow">
+            <span class="navbar__cta-text">Join the Waitlist</span>
+            <span class="navbar__cta-text">Join the Waitlist</span>
+          </span>
+        </a>
 
         <!-- Hamburger (Mobile) -->
         <button class="navbar__toggle" aria-label="Menu">
@@ -408,7 +414,9 @@
                         assistant to empower your Underwriting team.
                       </p>
                     </div>
-                    <button class="features__expand" aria-label="Learn more">+</button>
+                    <button class="features__expand" aria-label="Learn more">
+                      <span>+</span>
+                    </button>
                   </div>
                 </div>
 
@@ -441,7 +449,7 @@
                         Add your own list of custom rules to the already existing library of rules provided with the tool. These can be specific to carriers and policy types.
                       </p>
                     </div>
-                    <button class="features__expand" aria-label="Learn more">+</button>
+                    <button class="features__expand" aria-label="Learn more"><span>+</span></button>
                   </div>
                 </div>
 
@@ -473,7 +481,7 @@
                         Create notifications to flag high risk quotes or re-occurring coverage problems so that your team can deal with them systematically.
                       </p>
                     </div>
-                    <button class="features__expand" aria-label="Learn more">+</button>
+                    <button class="features__expand" aria-label="Learn more"><span>+</span></button>
                   </div>
                 </div>
 
@@ -503,7 +511,7 @@
                       </h3>
                       <p class="features__card-description text-b3">Monitor how your team is performing and jump in when additional training is required.</p>
                     </div>
-                    <button class="features__expand" aria-label="Learn more">+</button>
+                    <button class="features__expand" aria-label="Learn more"><span>+</span></button>
                   </div>
                 </div>
 
@@ -536,7 +544,7 @@
                       </h3>
                       <p class="features__card-description text-b3">Determine if the Quote fits your brokerage's Risk Appetite, even if it can be bound.</p>
                     </div>
-                    <button class="features__expand" aria-label="Learn more">+</button>
+                    <button class="features__expand" aria-label="Learn more"><span>+</span></button>
                   </div>
                 </div>
 
@@ -573,7 +581,7 @@
                       </h3>
                       <p class="features__card-description text-b3">Use the tool to cross-reference and validate data on the quote with loss history reports, dec pages, etc.</p>
                     </div>
-                    <button class="features__expand" aria-label="Learn more">+</button>
+                    <button class="features__expand" aria-label="Learn more"><span>+</span></button>
                   </div>
                 </div>
               </div>
@@ -591,6 +599,7 @@
             <button class="features__popup-close" aria-label="Close popup">
               <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
                 <circle opacity="0.9" cx="18" cy="18" r="18" fill="#2D3038" />
+                <circle opacity="1" cx="18" cy="18" r="18" fill="white" class="circle-2" />
                 <g clip-path="url(#clip0_28_1894)">
                   <path d="M13.2136 13.2214L22.7596 22.7674" stroke="white" stroke-width="1.8" stroke-miterlimit="10" />
                   <path d="M13.2137 22.7673L22.7861 13.1948" stroke="white" stroke-width="1.8" stroke-miterlimit="10" />
@@ -746,7 +755,7 @@
 
           <div class="workflow__steps">
             <!-- Step 1 -->
-            <div class="workflow__step">
+            <div class="workflow__step workflow__step--1">
               <div class="workflow__step__content">
                 <div class="workflow__step-number">1</div>
                 <h3 class="workflow__step-title h8 h5-desktop">Provide your team with a link and credentials.</h3>
@@ -758,7 +767,7 @@
             </div>
 
             <!-- Step 2 -->
-            <div class="workflow__step">
+            <div class="workflow__step workflow__step--2">
               <div class="workflow__step__content">
                 <div class="workflow__step-number">2</div>
                 <h3 class="workflow__step-title h8 h5-desktop">Underwriter drag and drop quotes into the web-app.</h3>
@@ -770,7 +779,7 @@
             </div>
 
             <!-- Step 3 -->
-            <div class="workflow__step">
+            <div class="workflow__step workflow__step--3">
               <div class="workflow__step__content">
                 <div class="workflow__step-number">3</div>
                 <h3 class="workflow__step-title h8 h5-desktop">Report provided with flagged items in the quote.</h3>
@@ -963,5 +972,76 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script src="./assets/js/main.js"></script>
+    <script type="module">
+      import { animate, scroll, stagger, inView } from "https://cdn.jsdelivr.net/npm/motion@latest/+esm";
+
+      import { splitText } from "https://cdn.jsdelivr.net/npm/motion-plus@0.1.1/+esm";
+
+      animate(".navbar", { y: [-90, 0] }, { delay: 0.15, duration: 1, easing: "ease-out" });
+
+      // 1. Logo animation
+      // animate(".navbar__logo", { y: [-90, 0] }, { delay: 0.2, duration: 0.3, easing: "ease-out" });
+      // 2. Nav links
+      animate(".navbar__menu", { y: [-70, 0] }, { delay: 0.15, duration: 1.25, easing: "ease-out" });
+
+      // 3. CTA (appears last)
+      animate(".navbar__cta", { y: [-140, 0] }, { delay: 0.15, duration: 1.25, easing: "ease-out" });
+
+      inView(".hero", () => {
+        animate(".hero__image", { opacity: [0, 1] }, { delay: 1.2, duration: 2, easing: "ease" });
+        animate(".hero__label", { opacity: [0, 1], y: [10, 0] }, { delay: 1.4, duration: 1, easing: "ease-out" });
+        animate(splitText(".hero__title").lines, { opacity: [0, 1], y: [10, 0] }, { type: "spring", duration: 1, bounce: 0, delay: stagger(0.15, { startDelay: 1.5 }) });
+
+        animate(".hero__description", { opacity: [0, 1], y: [10, 0] }, { delay: 1.8, duration: 1, easing: "ease-out" });
+        animate(".hero__feature", { opacity: [0, 1], y: [10, 0] }, { delay: 2, duration: 1, easing: "ease-out" });
+      });
+      inView(".compare__card", () => {
+        animate(".compare__card", { opacity: [0, 1], scale: [0.99, 1], y: [10, 0] }, { delay: 0.3, duration: 1, easing: "ease-out" });
+      });
+
+      inView(".stats__data__wrapper", () => {
+        animate(".stat__data", { opacity: [0, 1], y: [10, 0] }, { delay: stagger(0.1), duration: 0.3, easing: "ease-out" });
+      });
+
+      inView(".stats__data__wrapper", () => {
+        animate(".stat__value", { opacity: [0, 1], y: [10, 0] }, { delay: 0.1, duration: 0.3, easing: "ease-out" });
+        animate(".stat__text", { opacity: [0, 1], y: [10, 0] }, { delay: 0.2, duration: 0.3, easing: "ease-out" });
+      });
+
+      inView(".compliance__item", () => {
+        animate(".compliance__metric-title", { opacity: [0, 1], y: [10, 0] }, { delay: 0.2, duration: 0.5, easing: "ease-out" });
+        animate(".compliance__metric-sub", { opacity: [0, 1], y: [10, 0] }, { delay: 0.3, duration: 0.5, easing: "ease-out" });
+      });
+
+      inView(".perf__card", () => {
+        animate(".perf__card", { opacity: [0, 1], y: [30, 0] }, { type: "spring", duration: 0.8, bounce: 0, delay: stagger(0.25) });
+      });
+
+      inView(".workflow__step--1 .workflow__step__content", () => {
+        animate(".workflow__step--1 .workflow__step-number", { opacity: [0, 1], y: [20, 0] }, { delay: 0.3, duration: 0.7, easing: "ease-out" });
+        animate(".workflow__step--1 .workflow__step-title", { opacity: [0, 1], y: [20, 0] }, { delay: 0.4, duration: 0.7, easing: "ease-out" });
+        animate(".workflow__step--1 .workflow__step-description", { opacity: [0, 1], y: [20, 0] }, { delay: 0.5, duration: 0.7, easing: "ease-out" });
+      });
+
+      inView(".workflow__step--2 .workflow__step__content", () => {
+        animate(".workflow__step--2 .workflow__step-number", { opacity: [0, 1], y: [20, 0] }, { delay: 0.3, duration: 0.7, easing: "ease-out" });
+        animate(".workflow__step--2 .workflow__step-title", { opacity: [0, 1], y: [20, 0] }, { delay: 0.4, duration: 0.7, easing: "ease-out" });
+        animate(".workflow__step--2 .workflow__step-description", { opacity: [0, 1], y: [20, 0] }, { delay: 0.5, duration: 0.7, easing: "ease-out" });
+      });
+
+      inView(".workflow__step--3 .workflow__step__content", () => {
+        animate(".workflow__step--3 .workflow__step-number", { opacity: [0, 1], y: [20, 0] }, { delay: 0.3, duration: 0.7, easing: "ease-out" });
+        animate(".workflow__step--3 .workflow__step-title", { opacity: [0, 1], y: [20, 0] }, { delay: 0.4, duration: 0.7, easing: "ease-out" });
+        animate(".workflow__step--3 .workflow__step-description", { opacity: [0, 1], y: [20, 0] }, { delay: 0.5, duration: 0.7, easing: "ease-out" });
+      });
+
+      inView(".priv__card", () => {
+        animate(".priv__card", { opacity: [0, 1], y: [30, 0] }, { type: "spring", duration: 0.8, bounce: 0, delay: stagger(0.25) });
+      });
+
+      inView(".waitlist__form__submit", () => {
+        animate(".waitlist__form__submit", { opacity: [0, 1], y: [20, 0] }, { delay: 0.2, duration: 0.7, easing: "ease-out" });
+      });
+    </script>
   </body>
 </html>

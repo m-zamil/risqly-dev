@@ -493,6 +493,7 @@
 .features__icon img,
 .features__icon svg {
   height: auto;
+  transition: all 0.3s;
 }
 .icon-stacks {
   width: calc(58.3 * var(--scale));
@@ -529,6 +530,7 @@
 
 .features__card h3 {
   margin-top: calc(12 * var(--scale));
+  transition: all 0.3s;
 }
 
 .features__card-description {
@@ -552,18 +554,42 @@
   width: calc(33 * var(--scale));
   height: calc(33 * var(--scale));
   border-radius: 50%;
-  opacity: 0.9;
+  /* opacity: 0.9; */
   transition: opacity 0.2s, transform 0.2s;
   display: none;
 }
-
-.features__expand:hover {
-  opacity: 1;
+.features__expand::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background-color: white;
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  transition: scale 0.3s ease;
+  scale: 0;
 }
+
+.features__expand span {
+  position: relative;
+  z-index: 2;
+}
+
+/* .features__expand:hover {
+  opacity: 1;
+} */
 
 .features__expand img {
   width: 100%;
   height: 100%;
+}
+.features__card:hover .features__expand {
+  color: var(--dark);
+  /* background: white; */
+}
+.features__card:hover .features__expand::before {
+  scale: 1;
 }
 
 /* Slider */
@@ -649,12 +675,14 @@
   backdrop-filter: blur(30px);
   border: calc(1 * var(--scale)) solid #282828;
   border-radius: calc(8 * var(--scale));
-  transform: translateY(calc(20 * var(--scale)));
-  transition: transform 0.3s ease;
+  transform: scale(0.85);
+  opacity: 0;
+  transition: transform 0.35s ease, opacity 0.35s ease;
 }
 
 .features__popup.is-visible .features__popup-content {
-  transform: translateY(0);
+  transform: scale(1);
+  opacity: 1;
 }
 
 .features__popup-close {
@@ -663,6 +691,7 @@
   right: calc(30 * var(--scale));
   width: calc(36 * var(--scale));
   height: calc(36 * var(--scale));
+  border-radius: 50%;
   padding: 0;
   background: none;
   border: none;
@@ -672,11 +701,20 @@
   transition: 0.2s ease;
 }
 
-.features__popup-close:hover svg circle {
-  fill: white;
+.features__popup-close svg path {
+  stroke: white;
 }
 .features__popup-close:hover svg path {
   stroke: #0d1c3d;
+  transition: all 0.2s;
+}
+.features__popup-close .circle-2 {
+  r: 0;
+  transition: r 0.3s ease-in-out;
+}
+
+.features__popup-close:hover .circle-2 {
+  r: 18px;
 }
 
 .features__popup-close svg {
@@ -827,12 +865,9 @@
   }
   .features__expand {
     display: inline-block;
-    transition: all 0.2s;
+    transition: all 0.3s;
   }
-  .features__card:hover .features__expand {
-    color: var(--dark);
-    background: white;
-  }
+
   .swiper-wrapper:hover h3 {
     opacity: 0.3 !important;
   }

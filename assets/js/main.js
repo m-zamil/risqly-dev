@@ -36,7 +36,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const navbar = document.getElementById("navbar");
   const sections = document.querySelectorAll("[data-theme]");
   const navbarCta = document.querySelector(".navbar__cta");
-  console.log(sections);
 
   window.addEventListener("scroll", () => {
     const scrollY = window.scrollY + 0; // simulate “80px from top”
