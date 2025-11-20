@@ -300,10 +300,10 @@ h6,
   }
 
   .h6-desktop {
-    font-weight: 400;
-    font-size: calc(28 * var(--scale));
-    line-height: 110%;
-    letter-spacing: 0;
+    font-weight: 400 !important;
+    font-size: calc(28 * var(--scale)) !important;
+    line-height: 110% !important;
+    letter-spacing: 0 !important;
   }
 
   .h7-desktop {
@@ -789,10 +789,6 @@ h6,
 }
 
 .footer__tagline {
-  font-weight: 400;
-  font-size: calc(28 * var(--scale));
-  line-height: 110%;
-  letter-spacing: 0;
   color: white;
   margin-top: calc(18 * var(--scale));
   max-width: 20ch;
