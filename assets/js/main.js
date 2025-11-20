@@ -264,38 +264,38 @@ import { animate, scroll, stagger, inView } from "https://cdn.jsdelivr.net/npm/m
 import { splitText } from "https://cdn.jsdelivr.net/npm/motion-plus@0.1.1/+esm";
 
 // 1. Navbar
-animate(".navbar", { y: [-90, 0] }, { delay: 0.15, duration: 1, easing: "ease-out" });
+animate(".navbar", { y: [-90, 0] }, { delay: 0, duration: 1, easing: "ease-out" });
 
 // 2. Nav links
-animate(".navbar__menu", { y: [-70, 0] }, { delay: 0.15, duration: 1.25, easing: "ease-out" });
+animate(".navbar__menu", { y: [-70, 0] }, { delay: 0, duration: 1, easing: "ease-out" });
 
 // 3. CTA (appears last)
-animate(".navbar__cta", { y: [-140, 0] }, { delay: 0.15, duration: 1.25, easing: "ease-out" });
+animate(".navbar__cta", { y: [-140, 0] }, { delay: 0, duration: 1, easing: "ease-out" });
 
 inView(".hero", () => {
-  animate(".hero__image", { opacity: [0, 1] }, { delay: 1.2, duration: 2, easing: "ease" });
-  animate(".hero__label", { opacity: [0, 1], y: [10, 0] }, { delay: 1.4, duration: 1, easing: "ease-out" });
-  animate(splitText(".hero__title").lines, { opacity: [0, 1], y: [10, 0] }, { type: "spring", duration: 1, bounce: 0, delay: stagger(0.15, { startDelay: 1.5 }) });
+  animate(".hero__image", { scale: [0.99, 1], opacity: [0, 1] }, { delay: 1, duration: 1, easing: "ease" });
+  animate(".hero__label", { opacity: [0, 1], y: [10, 0] }, { delay: 1.2, duration: 1, easing: "ease-out" });
+  animate(splitText(".hero__title").lines, { opacity: [0, 1], y: [20, 0] }, { type: "spring", duration: 1, bounce: 0, delay: stagger(0.15, { startDelay: 1.3 }) });
 
-  animate(".hero__description", { opacity: [0, 1], y: [10, 0] }, { delay: 1.8, duration: 1, easing: "ease-out" });
-  animate(".hero__feature", { opacity: [0, 1], y: [10, 0] }, { delay: 2, duration: 1, easing: "ease-out" });
+  animate(".hero__description", { opacity: [0, 1], y: [20, 0] }, { delay: 1.7, duration: 1, easing: "ease-out" });
+  animate(".hero__feature", { opacity: [0, 1], y: [10, 0] }, { delay: 1.8, duration: 1, easing: "ease-out" });
 });
 inView(".compare__card", () => {
-  animate(".compare__card", { opacity: [0, 1], scale: [0.99, 1], y: [10, 0] }, { delay: 0.3, duration: 1, easing: "ease-out" });
+  animate(".compare__card", { opacity: [0, 1], scale: [0.99, 1], y: [30, 0] }, { delay: 0.3, duration: 1, easing: "ease-out" });
 });
 
 inView(".stats__data__wrapper", () => {
-  animate(".stat__data", { opacity: [0, 1], y: [10, 0] }, { delay: stagger(0.1), duration: 0.3, easing: "ease-out" });
+  animate(".stat__data", { opacity: [0, 1], y: [30, 0] }, { delay: stagger(0.1), duration: 1, easing: "ease-out" });
 });
 
 inView(".stats__data__wrapper", () => {
-  animate(".stat__value", { opacity: [0, 1], y: [10, 0] }, { delay: 0.1, duration: 0.3, easing: "ease-out" });
-  animate(".stat__text", { opacity: [0, 1], y: [10, 0] }, { delay: 0.2, duration: 0.3, easing: "ease-out" });
+  animate(".stat__value", { opacity: [0, 1], y: [30, 0] }, { delay: 0.1, duration: 1, easing: "ease-out" });
+  animate(".stat__text", { opacity: [0, 1], y: [30, 0] }, { delay: 0.2, duration: 1, easing: "ease-out" });
 });
 
 inView(".compliance__item", () => {
-  animate(".compliance__metric-title", { opacity: [0, 1], y: [10, 0] }, { delay: 0.2, duration: 0.5, easing: "ease-out" });
-  animate(".compliance__metric-sub", { opacity: [0, 1], y: [10, 0] }, { delay: 0.3, duration: 0.5, easing: "ease-out" });
+  animate(".compliance__metric-title", { opacity: [0, 1], y: [30, 0] }, { delay: 0.2, duration: 1, easing: "ease-out" });
+  animate(".compliance__metric-sub", { opacity: [0, 1], y: [30, 0] }, { delay: 0.3, duration: 1, easing: "ease-out" });
 });
 
 inView(".perf__card", () => {
@@ -303,21 +303,21 @@ inView(".perf__card", () => {
 });
 
 inView(".workflow__step--1 .workflow__step__content", () => {
-  animate(".workflow__step--1 .workflow__step-number", { opacity: [0, 1], y: [20, 0] }, { delay: 0.3, duration: 0.7, easing: "ease-out" });
-  animate(".workflow__step--1 .workflow__step-title", { opacity: [0, 1], y: [20, 0] }, { delay: 0.4, duration: 0.7, easing: "ease-out" });
-  animate(".workflow__step--1 .workflow__step-description", { opacity: [0, 1], y: [20, 0] }, { delay: 0.5, duration: 0.7, easing: "ease-out" });
+  animate(".workflow__step--1 .workflow__step-number", { opacity: [0, 1], y: [20, 0] }, { delay: 0.3, duration: 1, easing: "ease-out" });
+  animate(".workflow__step--1 .workflow__step-title", { opacity: [0, 1], y: [20, 0] }, { delay: 0.4, duration: 1, easing: "ease-out" });
+  animate(".workflow__step--1 .workflow__step-description", { opacity: [0, 1], y: [20, 0] }, { delay: 0.5, duration: 1, easing: "ease-out" });
 });
 
 inView(".workflow__step--2 .workflow__step__content", () => {
-  animate(".workflow__step--2 .workflow__step-number", { opacity: [0, 1], y: [20, 0] }, { delay: 0.3, duration: 0.7, easing: "ease-out" });
-  animate(".workflow__step--2 .workflow__step-title", { opacity: [0, 1], y: [20, 0] }, { delay: 0.4, duration: 0.7, easing: "ease-out" });
-  animate(".workflow__step--2 .workflow__step-description", { opacity: [0, 1], y: [20, 0] }, { delay: 0.5, duration: 0.7, easing: "ease-out" });
+  animate(".workflow__step--2 .workflow__step-number", { opacity: [0, 1], y: [20, 0] }, { delay: 0.3, duration: 1, easing: "ease-out" });
+  animate(".workflow__step--2 .workflow__step-title", { opacity: [0, 1], y: [20, 0] }, { delay: 0.4, duration: 1, easing: "ease-out" });
+  animate(".workflow__step--2 .workflow__step-description", { opacity: [0, 1], y: [20, 0] }, { delay: 0.5, duration: 1, easing: "ease-out" });
 });
 
 inView(".workflow__step--3 .workflow__step__content", () => {
-  animate(".workflow__step--3 .workflow__step-number", { opacity: [0, 1], y: [20, 0] }, { delay: 0.3, duration: 0.7, easing: "ease-out" });
-  animate(".workflow__step--3 .workflow__step-title", { opacity: [0, 1], y: [20, 0] }, { delay: 0.4, duration: 0.7, easing: "ease-out" });
-  animate(".workflow__step--3 .workflow__step-description", { opacity: [0, 1], y: [20, 0] }, { delay: 0.5, duration: 0.7, easing: "ease-out" });
+  animate(".workflow__step--3 .workflow__step-number", { opacity: [0, 1], y: [20, 0] }, { delay: 0.3, duration: 1, easing: "ease-out" });
+  animate(".workflow__step--3 .workflow__step-title", { opacity: [0, 1], y: [20, 0] }, { delay: 0.4, duration: 1, easing: "ease-out" });
+  animate(".workflow__step--3 .workflow__step-description", { opacity: [0, 1], y: [20, 0] }, { delay: 0.5, duration: 1, easing: "ease-out" });
 });
 
 inView(".priv__card", () => {
